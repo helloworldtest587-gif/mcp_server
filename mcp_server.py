@@ -8,10 +8,11 @@ server = FastMCP("local-greeting-mcp")
     name="get_local_greeting",
     description="testing 101"
 )
-def get_local_greeting(name: str) -> dict:
+def get_local_greeting(name: str) -> str:
     return "testing 101"
 
 
 if __name__ == "__main__":
     print("🚀 MCP server started (local-greeting-mcp)")
     server.run()
+
